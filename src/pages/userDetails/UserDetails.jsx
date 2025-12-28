@@ -35,6 +35,11 @@ function UserDetails() {
       email: "john@example.com",
       phone: "+1 987 654 3210",
       joined: "2024-01-12",
+      language: "English",
+      gender: "Male",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "2",
@@ -44,6 +49,11 @@ function UserDetails() {
       email: "emma@example.com",
       phone: "+1 987 654 3211",
       joined: "2024-03-28",
+      language: "English",
+      gender: "Female",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "3",
@@ -53,6 +63,11 @@ function UserDetails() {
       email: "liam@example.com",
       phone: "+1 987 654 3212",
       joined: "2024-06-15",
+      language: "English",
+      gender: "Male",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "4",
@@ -62,6 +77,11 @@ function UserDetails() {
       email: "olivia@example.com",
       phone: "+1 987 654 3213",
       joined: "2024-08-02",
+      language: "English",
+      gender: "Female",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "5",
@@ -71,6 +91,11 @@ function UserDetails() {
       email: "noah@example.com",
       phone: "+1 987 654 3214",
       joined: "2024-09-10",
+      language: "English",
+      gender: "Male",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "6",
@@ -80,6 +105,11 @@ function UserDetails() {
       email: "sophia@example.com",
       phone: "+1 987 654 3215",
       joined: "2024-11-19",
+      language: "English",
+      gender: "Female",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "7",
@@ -89,6 +119,11 @@ function UserDetails() {
       email: "james@example.com",
       phone: "+1 987 654 3216",
       joined: "2025-01-05",
+      language: "English",
+      gender: "Male",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "8",
@@ -98,6 +133,11 @@ function UserDetails() {
       email: "isabella@example.com",
       phone: "+1 987 654 3217",
       joined: "2025-02-21",
+      language: "English",
+      gender: "Female",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "9",
@@ -107,6 +147,11 @@ function UserDetails() {
       email: "benjamin@example.com",
       phone: "+1 987 654 3218",
       joined: "2025-03-03",
+      language: "English",
+      gender: "Male",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
     {
       key: "10",
@@ -116,6 +161,11 @@ function UserDetails() {
       email: "mia@example.com",
       phone: "+1 987 654 3219",
       joined: "2025-04-12",
+      language: "English",
+      gender: "Female",
+      country: "USA",
+      gameLevel: "12",
+      hobbies: "Reading",
     },
   ]);
   const columns = [
@@ -140,10 +190,14 @@ function UserDetails() {
         </div>
       ),
     },
-    { title: "Role", dataIndex: "role", key: "role" },
     { title: "Email", dataIndex: "email", key: "email" },
     { title: "Phone No", dataIndex: "phone", key: "phone" },
     { title: "Joined Date", dataIndex: "joined", key: "joined" },
+    { title: "Language", dataIndex: "language", key: "language" },
+    { title: "Gender", dataIndex: "gender", key: "gender" },
+    { title: "Country", dataIndex: "country", key: "country" },
+    { title: "Game Level", dataIndex: "gameLevel", key: "gameLevel" },
+    { title: "Hobbies", dataIndex: "hobbies", key: "hobbies" },
     {
       title: "Action",
       key: "action",
@@ -153,7 +207,7 @@ function UserDetails() {
             <MdBlock className="text-red-500 w-10 h-10 cursor-pointer rounded-md" />
           </button>
           <button className="" onClick={() => showViewModal(record)}>
-            <FaRegEye className="text-[#111827] w-10 h-10 cursor-pointer rounded-md" />
+            <FaRegEye className="text-[#9333EA] w-10 h-10 cursor-pointer rounded-md" />
           </button>
         </div>
       ),
@@ -185,7 +239,7 @@ function UserDetails() {
 
   return (
     <div>
-      <div className="bg-[#111827] px-4 md:px-5 py-3 rounded-md mb-3 flex flex-wrap md:flex-nowrap items-start md:items-center gap-2 md:gap-3">
+      <div className="bg-[#9333EA] px-4 md:px-5 py-3 rounded-md mb-3 flex flex-wrap md:flex-nowrap items-start md:items-center gap-2 md:gap-3">
         <button
           onClick={() => navigate(-1)}
           className="text-white hover:opacity-90 transition"
@@ -212,38 +266,10 @@ function UserDetails() {
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search users..."
-              className="bg-white text-[#0D0D0D] placeholder-[#111827] pl-10 pr-3 py-2 rounded-md focus:outline-none"
+              className="bg-white text-[#0D0D0D] placeholder-[#9333EA] pl-10 pr-3 py-2 rounded-md focus:outline-none"
             />
-            <IoSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#111827]" />
+            <IoSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#9333EA]" />
           </div>
-          <ConfigProvider
-            theme={{
-              components: {
-                Select: {
-                  controlHeightLG: 44,
-                  controlPaddingHorizontal: 12,
-                  optionPadding: 10,
-                  borderRadiusLG: 8,
-                },
-              },
-            }}
-          >
-            <Select
-              placeholder="Select role"
-              value={roleFilter}
-              onChange={setRoleFilter}
-              size="large"
-              className="w-full md:w-auto md:min-w-[220px]"
-              style={{ minWidth: 220 }}
-              popupMatchSelectWidth={false}
-              dropdownStyle={{ paddingTop: 8, paddingBottom: 8 }}
-              options={[
-                { label: "User", value: "User" },
-                { label: "Vendor", value: "Vendor" },
-                { label: "Blocked Users", value: "Blocked" },
-              ]}
-            />
-          </ConfigProvider>
         </div>
       </div>
 
@@ -254,18 +280,18 @@ function UserDetails() {
               activeBorderColor: "#00c0b5",
             },
             Pagination: {
-              colorPrimaryBorder: "#111827",
-              colorBorder: "#111827",
-              colorPrimaryHover: "#111827",
-              colorTextPlaceholder: "#111827",
-              itemActiveBgDisabled: "#111827",
-              colorPrimary: "#111827",
+              colorPrimaryBorder: "#9333EA",
+              colorBorder: "#9333EA",
+              colorPrimaryHover: "#9333EA",
+              colorTextPlaceholder: "#9333EA",
+              itemActiveBgDisabled: "#9333EA",
+              colorPrimary: "#9333EA",
             },
             Table: {
-              headerBg: "#111827",
+              headerBg: "#9333EA",
               headerColor: "rgb(255,255,255)",
               cellFontSize: 16,
-              headerSplitColor: "#111827",
+              headerSplitColor: "#9333EA",
             },
           },
         }}
@@ -284,7 +310,7 @@ function UserDetails() {
           footer={null}
         >
           <div className="flex flex-col justify-center items-center py-10">
-            <h1 className="text-3xl text-center text-[#111827]">Block User</h1>
+            <h1 className="text-3xl text-center text-[#9333EA]">Block User</h1>
             <p className="text-xl text-center mt-5">
               {selectedUser
                 ? `Do you want to block ${selectedUser.fullName}?`
@@ -299,7 +325,7 @@ function UserDetails() {
               </button>
               <button
                 onClick={confirmBlock}
-                className="bg-[#111827] text-white font-semibold py-3 px-5 rounded-lg"
+                className="bg-[#9333EA] text-white font-semibold py-3 px-5 rounded-lg"
               >
                 Block
               </button>
@@ -319,7 +345,7 @@ function UserDetails() {
           {selectedUser && (
             <div className="relative">
               {/* Header with green gradient */}
-              <div className="bg-gradient-to-r from-[#111827] to-[#111827] p-6 -m-6 mb-6 rounded-t-lg">
+              <div className="bg-gradient-to-r from-[#9333EA] to-[#9333EA] p-6 -m-6 mb-6 rounded-t-lg">
                 <div className="flex items-center gap-6">
                   <div className="relative">
                     <img
@@ -362,6 +388,36 @@ function UserDetails() {
                   <div className="text-gray-600 text-sm">Joined Date</div>
                   <div className="text-lg font-semibold">
                     {selectedUser.joined}
+                  </div>
+                </div>
+                <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm">
+                  <div className="text-gray-600 text-sm">Language</div>
+                  <div className="text-lg font-semibold">
+                    {selectedUser.language}
+                  </div>
+                </div>
+                <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm">
+                  <div className="text-gray-600 text-sm">Gender</div>
+                  <div className="text-lg font-semibold">
+                    {selectedUser.gender}
+                  </div>
+                </div>
+                <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm">
+                  <div className="text-gray-600 text-sm">Country</div>
+                  <div className="text-lg font-semibold">
+                    {selectedUser.country}
+                  </div>
+                </div>
+                <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm">
+                  <div className="text-gray-600 text-sm">Game Level</div>
+                  <div className="text-lg font-semibold">
+                    {selectedUser.gameLevel}
+                  </div>
+                </div>
+                <div className="bg-white border border-gray-200 p-4 rounded-xl shadow-sm md:col-span-2">
+                  <div className="text-gray-600 text-sm">Hobbies</div>
+                  <div className="text-lg font-semibold">
+                    {selectedUser.hobbies}
                   </div>
                 </div>
               </div>

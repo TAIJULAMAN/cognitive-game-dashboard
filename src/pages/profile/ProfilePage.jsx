@@ -12,7 +12,7 @@ function ProfilePage() {
   return (
     <div className="overflow-y-auto">
       <div className="px-5 pb-5 h-full">
-        <div className="bg-[#111827] px-4 md:px-5 py-3 rounded-md mb-3 flex flex-wrap md:flex-nowrap items-start md:items-center gap-2 md:gap-3">
+        <div className="bg-[#9333EA] px-4 md:px-5 py-3 rounded-md mb-3 flex flex-wrap md:flex-nowrap items-start md:items-center gap-2 md:gap-3">
           <button
             onClick={() => navigate(-1)}
             className="text-white hover:opacity-90 transition"
@@ -24,7 +24,7 @@ function ProfilePage() {
         </div>
         <div className="mx-auto flex flex-col justify-center items-center">
           {/* Profile Picture Section */}
-          <div className="flex flex-col md:flex-row justify-center items-center bg-[#111827] mt-5 text-white w-full max-w-3xl mx-auto p-4 md:p-5 gap-4 md:gap-5 rounded-lg">
+          <div className="flex flex-col md:flex-row justify-center items-center bg-[#9333EA] mt-5 text-white w-full max-w-3xl mx-auto p-4 md:p-5 gap-4 md:gap-5 rounded-lg">
             <div className="relative">
               <div className="w-[122px] h-[122px] bg-gray-300 rounded-full border-4 border-white shadow-xl flex justify-center items-center">
                 <img
@@ -52,8 +52,8 @@ function ProfilePage() {
             <p
               onClick={() => setActiveTab("editProfile")}
               className={`cursor-pointer px-3 py-1 rounded-md pb-1 ${activeTab === "editProfile"
-                  ? "text-[#111827] border-b-2 border-[#111827]"
-                  : "text-[#6A6D76]"
+                ? "text-[#9333EA] border-b-2 border-[#9333EA]"
+                : "text-[#6A6D76]"
                 }`}
             >
               Edit Profile
@@ -61,8 +61,8 @@ function ProfilePage() {
             <p
               onClick={() => setActiveTab("changePassword")}
               className={`cursor-pointer px-3 py-1 rounded-md pb-1 ${activeTab === "changePassword"
-                  ? "text-[#111827] border-b-2 border-[#111827]"
-                  : "text-[#6A6D76]"
+                ? "text-[#9333EA] border-b-2 border-[#9333EA]"
+                : "text-[#6A6D76]"
                 }`}
             >
               Change Password

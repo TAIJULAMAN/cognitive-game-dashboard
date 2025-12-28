@@ -166,12 +166,8 @@ function Reports() {
       key: "action",
       render: (_, record) => (
         <div className="flex gap-2">
-          <button className="" onClick={() => navigate("/chat")}>
-            <LuMessageSquareText className=" w-10 h-10 cursor-pointer rounded-md" />
-          </button>
-
           <button className="" onClick={() => showViewModal(record)}>
-            <FaRegEye className="text-[#111827] w-10 h-10 cursor-pointer rounded-md" />
+            <FaRegEye className="text-[#9333EA] w-10 h-10 cursor-pointer rounded-md" />
           </button>
           <button className="" onClick={() => showModal(record)}>
             <RiDeleteBin6Line className="text-red-500 w-10 h-10 cursor-pointer rounded-md" />
@@ -183,7 +179,7 @@ function Reports() {
 
   return (
     <div>
-      <div className="bg-[#111827] px-5 py-3 rounded-md mb-3 flex items-center gap-3">
+      <div className="bg-[#9333EA] px-5 py-3 rounded-md mb-3 flex items-center gap-3">
         <button
           onClick={() => navigate(-1)}
           className="text-white hover:opacity-90 transition"
@@ -201,18 +197,18 @@ function Reports() {
               activeBorderColor: "#6BB43A",
             },
             Pagination: {
-              colorPrimaryBorder: "#111827",
-              colorBorder: "#111827",
-              colorPrimaryHover: "#111827",
-              colorTextPlaceholder: "#111827",
-              itemActiveBgDisabled: "#111827",
-              colorPrimary: "#111827",
+              colorPrimaryBorder: "#9333EA",
+              colorBorder: "#9333EA",
+              colorPrimaryHover: "#9333EA",
+              colorTextPlaceholder: "#9333EA",
+              itemActiveBgDisabled: "#9333EA",
+              colorPrimary: "#9333EA",
             },
             Table: {
-              headerBg: "#111827",
+              headerBg: "#9333EA",
               headerColor: "rgb(255,255,255)",
               cellFontSize: 16,
-              headerSplitColor: "#111827",
+              headerSplitColor: "#9333EA",
             },
           },
         }}
@@ -231,7 +227,7 @@ function Reports() {
           footer={null}
         >
           <div className="flex flex-col justify-center items-center py-10">
-            <h1 className="text-3xl text-center text-[#111827]">
+            <h1 className="text-3xl text-center text-[#9333EA]">
               Are you sure!
             </h1>
             <p className="text-xl text-center mt-5">
@@ -240,7 +236,7 @@ function Reports() {
             <div className="text-center py-5 w-full">
               <button
                 onClick={() => setIsModalOpen(false)}
-                className="bg-[#111827] text-white font-semibold w-1/3 py-3 px-5 rounded-lg"
+                className="bg-[#9333EA] text-white font-semibold w-1/3 py-3 px-5 rounded-lg"
               >
                 CONFIRM
               </button>
@@ -260,7 +256,7 @@ function Reports() {
           {selectedUser && (
             <div className="relative">
               {/* Header with gradient background */}
-              <div className="bg-gradient-to-r from-[#111827] to-[#111827] p-6 -m-6 mb-6 rounded-t-lg">
+              <div className="bg-gradient-to-r from-[#9333EA] to-[#9333EA] p-6 -m-6 mb-6 rounded-t-lg">
                 <div className="flex items-center gap-6">
                   <div className="relative">
                     <img
@@ -296,7 +292,7 @@ function Reports() {
               <div className="space-y-6">
                 {/* Report Information */}
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2 text-[#111827]">
+                  <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center gap-2 text-[#9333EA]">
                     <div className="w-2 h-2 bg-[#6BB43A] rounded-full"></div>
                     Report Information
                   </h3>
@@ -307,7 +303,7 @@ function Reports() {
                           <span className="text-red-600 text-lg">⚠️</span>
                         </div>
                         <div>
-                          <h4 className="text-sm font-medium text-gray-600 text-[#111827]">
+                          <h4 className="text-sm font-medium text-gray-600 text-[#9333EA]">
                             Reason
                           </h4>
                           <p className="text-lg font-semibold text-gray-800">

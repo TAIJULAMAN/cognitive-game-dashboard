@@ -76,7 +76,7 @@ Izz_Dashboard/
 - **Auth Screens**: Sign in, reset, verification flows (`src/pages/auth/`).
 
 ## Theming
-- Primary brand color: `#111827` (applied across pages via Tailwind arbitrary classes like `bg-[#111827]`).
+- Primary brand color: `#9333EA` (applied across pages via Tailwind arbitrary classes like `bg-[#9333EA]`).
 - With Tailwind v4, arbitrary color utilities are supported. If you prefer semantic class names:
   - Create CSS variables in a global stylesheet and reference them via Tailwind’s CSS variables.
   - Or configure a Tailwind plugin/theme (when migrating to a custom config).
@@ -88,7 +88,7 @@ Izz_Dashboard/
 
 ## Development Guidelines
 - **Components**: Keep components page-scoped under `src/pages/...` and shared UI under `src/shared/...`.
-- **Styling**: Prefer Tailwind utility classes. Use arbitrary values for brand color: `[#111827]`.
+- **Styling**: Prefer Tailwind utility classes. Use arbitrary values for brand color: `[#9333EA]`.
 - **State**: Use React hooks; no global store at present.
 - **Linting**: Keep code lint-clean via `npm run lint`.
 - **Commits**: Use clear, descriptive messages (e.g., `feat:`, `fix:`, `chore:`).
@@ -107,7 +107,7 @@ Izz_Dashboard/
   ```bash
   git config core.autocrlf true   # checkout CRLF on Windows, commit LF
   ```
-- **Tailwind arbitrary colors not applied**: Ensure dev server restarted after changes; verify classes like `bg-[#111827]` are present in built CSS.
+- **Tailwind arbitrary colors not applied**: Ensure dev server restarted after changes; verify classes like `bg-[#9333EA]` are present in built CSS.
 - **AntD styles**: Make sure `ConfigProvider` wraps components that need theming.
 
 ## License

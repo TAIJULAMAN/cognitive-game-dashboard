@@ -44,11 +44,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         {/* Dashboard Page */}
         <Link to="/">
           <li
-            className={`flex items-center gap-2 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
+            className={`flex items-center gap-2 cursor-pointer transition-all duration-300 ease-in-out ${isActive("/")
+              ? "bg-[#9333EA] text-white px-3 py-3 rounded-lg"
+              : ""
+              }`}
           >
             <RxDashboard className="w-5 h-5" />
             <p className="text-lg font-semibold">Dashboard</p>
@@ -57,115 +56,58 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         {/* User Management */}
         <Link to="/user-details">
           <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/user-details")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${isActive("/user-details")
+              ? "bg-[#9333EA] text-white px-3 py-3 rounded-lg"
+              : ""
+              }`}
           >
             <LuUsers className="w-5 h-5" />
             <p className="text-lg font-semibold">User Management</p>
           </li>
         </Link>
-        {/* Earnings */}
-        <Link to="/earnings">
-          <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/earnings")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
-          >
-            <MdOutlineInventory2 className="w-5 h-5" />
-            <p className="text-lg font-semibold">Earnings</p>
-          </li>
-        </Link>
-
-        {/* Gamification*/}
-        <Link to="/gamification">
-          <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/gamification")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
-          >
-            <MdOutlineAssignment className="w-5 h-5" />
-            <p className="text-lg font-semibold">Gamification</p>
-          </li>
-        </Link>
         {/* Categories */}
         <Link to="/categories">
           <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/categories")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${isActive("/categories")
+              ? "bg-[#9333EA] text-white px-3 py-3 rounded-lg"
+              : ""
+              }`}
           >
             <MdLocalHospital className="w-5 h-5" />
             <p className="text-lg font-semibold">Categories</p>
           </li>
         </Link>
-        {/* Lab Management */}
-        {/* <Link to="/lab-management">
-          <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/lab-management")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
-          >
-            <RiFlaskLine className="w-5 h-5" />
-            <p className="text-lg font-semibold">Lab Management</p>
-          </li>
-        </Link> */}
-
+        {/* Create Admin */}
         <Link to="/create-admin">
           <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/create-admin")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${isActive("/create-admin")
+              ? "bg-[#9333EA] text-white px-3 py-3 rounded-lg"
+              : ""
+              }`}
           >
             <MdAdminPanelSettings className="w-5 h-5" />
             <p className="text-lg font-semibold">Create Admin</p>
           </li>
         </Link>
-
-        {/* Chat */}
-        <Link to="/chat">
-          <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/chat")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
-          >
-            <TbBrandWechat className="w-5 h-5" />
-            <p className="text-lg font-semibold">Chat</p>
-          </li>
-        </Link>
+        {/* Reports */}
         <Link to="/reports">
           <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/reports")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${isActive("/reports")
+              ? "bg-[#9333EA] text-white px-3 py-3 rounded-lg"
+              : ""
+              }`}
           >
             <TbReport className="w-5 h-5 text-lg font-semibold" />
             <p className="text-lg font-semibold">Reports</p>
           </li>
         </Link>
+        {/* Settings */}
         <Link to="/settings">
           <li
-            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${
-              isActive("/settings")
-                ? "bg-[#111827] text-white px-3 py-3 rounded-lg"
-                : ""
-            }`}
+            className={`flex items-center gap-2 mt-5 cursor-pointer transition-all duration-300 ease-in-out ${isActive("/settings")
+              ? "bg-[#9333EA] text-white px-3 py-3 rounded-lg"
+              : ""
+              }`}
           >
             <IoMdSettings className="w-5 h-5 text-lg font-semibold" />
             <p className="text-lg font-semibold">Settings</p>
@@ -176,7 +118,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       {/* Logout Button */}
       <div className="absolute mt-8 md:mt-20 mmd:mt-20 w-full px-5">
         <Link to="/sign-in">
-          <button className="flex items-center gap-4 w-full py-3 rounded-lg bg-[#111827]  px-3 duration-200 text-white justify-center ">
+          <button className="flex items-center gap-4 w-full py-3 rounded-lg bg-[#9333EA]  px-3 duration-200 text-white justify-center ">
             <IoLogOutOutline className="w-5 h-5 font-bold" />
             <span>Logout</span>
           </button>

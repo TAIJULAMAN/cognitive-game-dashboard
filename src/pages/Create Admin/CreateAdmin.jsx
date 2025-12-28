@@ -92,7 +92,7 @@ export default function CreateAdmin() {
 
   return (
     <div className="p-5">
-      <div className="bg-[#111827] px-5 py-3 rounded-md mb-3 flex items-center gap-3">
+      <div className="bg-[#9333EA] px-5 py-3 rounded-md mb-3 flex items-center gap-3">
         <button
           onClick={() => navigate(-1)}
           className="text-white hover:opacity-90 transition"
@@ -104,7 +104,7 @@ export default function CreateAdmin() {
         <button
           type="button"
           onClick={() => navigate("/add-admin")}
-          className="ml-auto bg-white text-[#111827] px-3 py-1 rounded-md font-semibold flex items-center gap-2 hover:opacity-95 transition"
+          className="ml-auto bg-white text-[#9333EA] px-3 py-1 rounded-md font-semibold flex items-center gap-2 hover:opacity-95 transition"
         >
           <IoAddOutline className="w-4 h-4" />
           Add Admin
@@ -115,18 +115,18 @@ export default function CreateAdmin() {
         theme={{
           components: {
             Table: {
-              headerBg: "#111827",
+              headerBg: "#9333EA",
               headerColor: "rgb(255,255,255)",
               cellFontSize: 16,
-              headerSplitColor: "#111827",
+              headerSplitColor: "#9333EA",
             },
             Pagination: {
-              colorPrimaryBorder: "#111827",
-              colorBorder: "#111827",
-              colorPrimaryHover: "#111827",
-              colorTextPlaceholder: "#111827",
-              itemActiveBgDisabled: "#111827",
-              colorPrimary: "#111827",
+              colorPrimaryBorder: "#9333EA",
+              colorBorder: "#9333EA",
+              colorPrimaryHover: "#9333EA",
+              colorTextPlaceholder: "#9333EA",
+              itemActiveBgDisabled: "#9333EA",
+              colorPrimary: "#9333EA",
             },
           },
         }}

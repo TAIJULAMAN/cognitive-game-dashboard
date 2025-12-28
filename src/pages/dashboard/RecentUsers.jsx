@@ -91,10 +91,10 @@ const RecentUsers = () => {
             },
 
             Table: {
-              headerBg: "#111827",
+              headerBg: "#9333EA",
               headerColor: "rgb(255,255,255)",
               cellFontSize: 16,
-              headerSplitColor: "#111827",
+              headerSplitColor: "#9333EA",
             },
           },
         }}
